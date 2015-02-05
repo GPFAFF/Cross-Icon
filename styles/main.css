@@ -19,7 +19,7 @@ h1{
     margin-left: -170px;
     margin-top: -150px;
 }
-.menu-icon-container{
+.container{
   position:fixed;
   display:block;
   width:50px;
@@ -30,7 +30,7 @@ h1{
   margin-left:-25px;
   cursor:pointer;
 }
-.menu-icon{
+.menu{
   position:relative;
   display:block;
   width:30px;
@@ -42,7 +42,7 @@ h1{
   margin-left:-15px;
   transition: background-color .2s ease-out;
 }
-    .menu-icon::after, .menu-icon::before{
+    .menu::after, .menu::before{
       content:'';
       position:absolute;
       display:block;
@@ -52,42 +52,42 @@ h1{
       left:0px;
       transition: all .2s ease-out;
     }
-    .menu-icon::after{
+    .menu::after{
       top:9px;
     }
-    .menu-icon::before{
+    .menu::before{
       top:-9px;
 
     }
-.menu-icon-container:hover .menu-icon::after{
+.container:hover .menu::after{
   top:13px;
   transition: all .2s ease-out;
 }
-.menu-icon-container:hover .menu-icon::before{
+.container:hover .menu::before{
   top:-13px;
   transition: all .2s ease-out;
 }
 
 /*---cross---*/
-.menu-icon.transformed{
+.menu.transformed{
   background-color:transparent;
 }
-    .menu-icon.transformed::after, .menu-icon.transformed::before{
+    .menu.transformed::after, .menu.transformed::before{
       transform-origin:50% 50%;
       top:0px;
       left:2px;
       width:26px;
       transition: all .15s ease-out;
     }
-    .menu-icon.transformed::after{
+    .menu.transformed::after{
       transform:rotate(45deg);
     }
-    .menu-icon.transformed::before{
+    .menu.transformed::before{
       transform:rotate(-45deg);
     }
 
-.menu-icon-container:hover .menu-icon.transformed::after,
-.menu-icon-container:hover .menu-icon.transformed::before{
+.container:hover .menu.transformed::after,
+.container:hover .menu.transformed::before{
   top:0px;
   left:-1px;
   width:32px;
